@@ -21,8 +21,6 @@
 		9F4232B220E2839E00A61164 /* pageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4232B120E2839E00A61164 /* pageViewController.swift */; };
 		9F4232B420E28E1C00A61164 /* button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4232B320E28E1C00A61164 /* button.swift */; };
 		9F4232B620E29F5800A61164 /* button2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4232B520E29F5800A61164 /* button2.swift */; };
-		9F4232C620E2DE3800A61164 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4232C520E2DE3800A61164 /* TableViewController.swift */; };
-		9F4232C820E2E14F00A61164 /* messageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4232C720E2E14F00A61164 /* messageViewController.swift */; };
 		9F4232CA20E2E80700A61164 /* homeswich.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4232C920E2E80700A61164 /* homeswich.swift */; };
 		9F4232CE20E2E92300A61164 /* simpleVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4232CC20E2E92300A61164 /* simpleVC1.swift */; };
 		9F4232CF20E2E92300A61164 /* simpleVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4232CD20E2E92300A61164 /* simpleVC1.xib */; };
@@ -40,6 +38,8 @@
 		B36424AA20FEF4F50013BBF1 /* pageController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36424A920FEF4F50013BBF1 /* pageController2.swift */; };
 		B36424AC20FEFD720013BBF1 /* editpageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36424AB20FEFD720013BBF1 /* editpageController.swift */; };
 		B36424AE20FFB53F0013BBF1 /* picController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36424AD20FFB53F0013BBF1 /* picController.swift */; };
+		B3BC3F8F21005E9E00375347 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC3F8E21005E9E00375347 /* RestaurantTableViewController.swift */; };
+		B3BC3F91210060EB00375347 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC3F90210060EB00375347 /* Restaurant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +80,6 @@
 		9F4232B120E2839E00A61164 /* pageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageViewController.swift; sourceTree = "<group>"; };
 		9F4232B320E28E1C00A61164 /* button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = button.swift; sourceTree = "<group>"; };
 		9F4232B520E29F5800A61164 /* button2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = button2.swift; sourceTree = "<group>"; };
-		9F4232C520E2DE3800A61164 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		9F4232C720E2E14F00A61164 /* messageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = messageViewController.swift; sourceTree = "<group>"; };
 		9F4232C920E2E80700A61164 /* homeswich.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeswich.swift; sourceTree = "<group>"; };
 		9F4232CC20E2E92300A61164 /* simpleVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleVC1.swift; sourceTree = "<group>"; };
 		9F4232CD20E2E92300A61164 /* simpleVC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = simpleVC1.xib; sourceTree = "<group>"; };
@@ -99,6 +97,8 @@
 		B36424A920FEF4F50013BBF1 /* pageController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageController2.swift; sourceTree = "<group>"; };
 		B36424AB20FEFD720013BBF1 /* editpageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editpageController.swift; sourceTree = "<group>"; };
 		B36424AD20FFB53F0013BBF1 /* picController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = picController.swift; sourceTree = "<group>"; };
+		B3BC3F8E21005E9E00375347 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		B3BC3F90210060EB00375347 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +156,8 @@
 				B36424AD20FFB53F0013BBF1 /* picController.swift */,
 				9F4230CF20E15C3D00A61164 /* SecondViewController.swift */,
 				9F4230D120E15C3D00A61164 /* Main.storyboard */,
+				B3BC3F8E21005E9E00375347 /* RestaurantTableViewController.swift */,
+				B3BC3F90210060EB00375347 /* Restaurant.swift */,
 				B36424A520FE7CE40013BBF1 /* pageController.swift */,
 				B36424A720FEEC660013BBF1 /* pageController1.swift */,
 				B36424A920FEF4F50013BBF1 /* pageController2.swift */,
@@ -169,8 +171,6 @@
 				9F4232B120E2839E00A61164 /* pageViewController.swift */,
 				9F4232B320E28E1C00A61164 /* button.swift */,
 				9F4232B520E29F5800A61164 /* button2.swift */,
-				9F4232C520E2DE3800A61164 /* TableViewController.swift */,
-				9F4232C720E2E14F00A61164 /* messageViewController.swift */,
 				9F4232C920E2E80700A61164 /* homeswich.swift */,
 				9F4232E320E2F80500A61164 /* stampViewController.swift */,
 			);
@@ -356,8 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3BC3F91210060EB00375347 /* Restaurant.swift in Sources */,
 				B36424AC20FEFD720013BBF1 /* editpageController.swift in Sources */,
 				9F4232D220E2E93900A61164 /* simpleVC2.swift in Sources */,
+				B3BC3F8F21005E9E00375347 /* RestaurantTableViewController.swift in Sources */,
 				9F4230D020E15C3D00A61164 /* SecondViewController.swift in Sources */,
 				B36424A620FE7CE40013BBF1 /* pageController.swift in Sources */,
 				9F4232B420E28E1C00A61164 /* button.swift in Sources */,
@@ -372,9 +374,7 @@
 				B36424AA20FEF4F50013BBF1 /* pageController2.swift in Sources */,
 				9F42317A20E1740E00A61164 /* ViewController.swift in Sources */,
 				9F4230CE20E15C3D00A61164 /* FirstViewController.swift in Sources */,
-				9F4232C820E2E14F00A61164 /* messageViewController.swift in Sources */,
 				9F4232B620E29F5800A61164 /* button2.swift in Sources */,
-				9F4232C620E2DE3800A61164 /* TableViewController.swift in Sources */,
 				9F4232CA20E2E80700A61164 /* homeswich.swift in Sources */,
 				9F4232E120E2F7B400A61164 /* stamp2.swift in Sources */,
 				9F4232B220E2839E00A61164 /* pageViewController.swift in Sources */,

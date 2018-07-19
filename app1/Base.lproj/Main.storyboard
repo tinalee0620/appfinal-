@@ -1089,7 +1089,7 @@
         <!--Notice-->
         <scene sceneID="How-fL-IU8">
             <objects>
-                <tableViewController id="sWx-DG-IrB" customClass="TableViewController" customModule="app1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="sWx-DG-IrB" customClass="RestaurantTableViewController" customModule="app1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7yt-H2-P5c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1101,29 +1101,6 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eH9-ot-jeJ" id="O21-hf-tTm">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="quE-Nu-lux">
-                                            <rect key="frame" x="16" y="4" width="50" height="50"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="50" id="1jg-xs-Ncg"/>
-                                                <constraint firstAttribute="height" constant="50" id="xxk-cT-iSt"/>
-                                            </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glU-Ib-557">
-                                            <rect key="frame" x="85" y="17" width="70" height="24"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wl-2t-ZNZ">
-                                            <rect key="frame" x="298" y="4" width="61" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -1133,12 +1110,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Notice" id="om9-M5-SPp"/>
-                    <connections>
-                        <outlet property="content" destination="glU-Ib-557" id="xxw-Sw-OVi"/>
-                        <outlet property="date" destination="7wl-2t-ZNZ" id="awW-Xk-7ai"/>
-                        <outlet property="imageview" destination="quE-Nu-lux" id="ari-Jt-RDz"/>
-                        <segue destination="lG3-Fu-PAF" kind="show" identifier="segue" id="Jii-Sb-ngo"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1w-rT-S5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1175,9 +1146,6 @@
                                 <rect key="frame" x="39" y="540" width="113" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="&lt;Back"/>
-                                <connections>
-                                    <segue destination="sWx-DG-IrB" kind="show" id="iAh-y9-FAb"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1968,9 +1936,7 @@ It is for small needs it never asks,         or knows or remembers.</string>
         <image name="許1" width="469" height="594"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Jii-Sb-ngo"/>
         <segue reference="Yne-IK-1fa"/>
-        <segue reference="iAh-y9-FAb"/>
         <segue reference="l0g-1H-y9i"/>
         <segue reference="RvM-VH-dXP"/>
         <segue reference="nJE-6N-Y0k"/>
