@@ -291,12 +291,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccG-x7-V0T">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="編輯頁面cut" translatesAutoresizingMaskIntoConstraints="NO" id="Mkx-Qa-x5J">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="編輯頁面3cut" translatesAutoresizingMaskIntoConstraints="NO" id="Mkx-Qa-x5J">
                                                 <rect key="frame" x="0.0" y="8" width="375" height="206"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="postcard2" highlightedImage="postcard2" translatesAutoresizingMaskIntoConstraints="NO" id="dKt-BD-e1x">
-                                                <rect key="frame" x="194" y="233" width="169" height="117"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="postcard5" translatesAutoresizingMaskIntoConstraints="NO" id="22g-N5-gvH">
@@ -332,13 +328,24 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NvP-9a-G30">
-                                                <rect key="frame" x="12" y="233" width="169" height="117"/>
+                                                <rect key="frame" x="194" y="233" width="169" height="117"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="postcard1"/>
                                                 <connections>
                                                     <segue destination="XsH-hr-fWf" kind="show" id="nJE-6N-Y0k"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xV1-w3-Fpi">
+                                                <rect key="frame" x="0.0" y="233" width="181" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="importimage:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="1pG-MX-kJy"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera-2" highlightedImage="background" translatesAutoresizingMaskIntoConstraints="NO" id="dKt-BD-e1x">
+                                                <rect key="frame" x="12" y="233" width="169" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -367,6 +374,7 @@
                     <navigationItem key="navigationItem" title="Edit" id="LUy-ID-v9Y"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="ImageView" destination="dKt-BD-e1x" id="OfN-a1-LSW"/>
                         <segue destination="XsH-hr-fWf" kind="show" id="Ghw-77-XsX"/>
                     </connections>
                 </viewController>
@@ -388,7 +396,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rs0-Rc-H26">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="編輯頁面2cut" translatesAutoresizingMaskIntoConstraints="NO" id="nee-NG-3IF">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="編輯頁面cut" translatesAutoresizingMaskIntoConstraints="NO" id="nee-NG-3IF">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="206"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
@@ -484,7 +492,7 @@
                                                     <constraint firstAttribute="width" constant="313" id="uVS-zs-LXn"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="編輯頁面3cut" translatesAutoresizingMaskIntoConstraints="NO" id="oqM-Zf-qgl">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="編輯頁面2cut" translatesAutoresizingMaskIntoConstraints="NO" id="oqM-Zf-qgl">
                                                 <rect key="frame" x="0.0" y="48" width="375" height="206"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="206" id="EVH-JL-XFj"/>
@@ -1936,6 +1944,7 @@ It is for small needs it never asks,         or knows or remembers.</string>
     <resources>
         <image name="PAL" width="736" height="955"/>
         <image name="background" width="3133" height="1644"/>
+        <image name="camera-2" width="668" height="467"/>
         <image name="edit" width="50" height="50"/>
         <image name="friend" width="1920" height="1440"/>
         <image name="friend1" width="750" height="1061"/>
@@ -1953,7 +1962,6 @@ It is for small needs it never asks,         or knows or remembers.</string>
         <image name="pic5" width="2552" height="1623"/>
         <image name="postcard1" width="500" height="333"/>
         <image name="postcard10" width="4032" height="3024"/>
-        <image name="postcard2" width="500" height="333"/>
         <image name="postcard3" width="700" height="578"/>
         <image name="postcard4" width="4357" height="3268"/>
         <image name="postcard5" width="5472" height="3648"/>
