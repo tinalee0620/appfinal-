@@ -15,9 +15,9 @@ class textViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDe
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var text: UITextView!
     
-    
+    let customFont = UIFont(name: "ShigotoMemogaki", size: UIFont.labelFontSize);
     let font=["Arial Black","Verdana","Comic Sans MS","Baskerville","DIN Alternate","Microsoft Sans Serif","Georgia","Lao Sangam MN","Herculanum","Sinhala Sangam MN"]
-    
+    let uifont = ["UIFont.italicSystemFont","UIFont.systemFont","UIFont.italicSystemFont","UIFont.systemFont","UIFont.italicSystemFont","UIFont.systemFont","UIFont.italicSystemFont","UIFont.systemFont","UIFont.italicSystemFont","UIFont.systemFont"]
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -31,6 +31,9 @@ class textViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDe
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         label.text=font[row]
+        
+        label.font = UIFont.boldSystemFont(ofSize: 40)
+        
     }
     
     

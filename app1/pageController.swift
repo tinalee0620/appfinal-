@@ -16,6 +16,7 @@ class pageController: UIViewController , UIScrollViewDelegate{
     var images : [String]  = ["0","1"]
     var frame = CGRect(x:0,y:0,width:0,height:0)
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -29,10 +30,12 @@ class pageController: UIViewController , UIScrollViewDelegate{
         }
         scrollview.contentSize = CGSize(width: (scrollview.frame.size.width*CGFloat(images.count)), height: scrollview.frame.size.height)
         scrollview.delegate = self
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {

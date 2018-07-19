@@ -41,6 +41,7 @@
 		B3BC3F8F21005E9E00375347 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC3F8E21005E9E00375347 /* RestaurantTableViewController.swift */; };
 		B3BC3F91210060EB00375347 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC3F90210060EB00375347 /* Restaurant.swift */; };
 		B3BC3F952100768700375347 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC3F942100768700375347 /* RestaurantTableViewCell.swift */; };
+		B3BC3F972100F8CC00375347 /* ShigotoMemogaki-Regular-1-01.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3BC3F962100F8CC00375347 /* ShigotoMemogaki-Regular-1-01.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		B3BC3F8E21005E9E00375347 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		B3BC3F90210060EB00375347 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		B3BC3F942100768700375347 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		B3BC3F962100F8CC00375347 /* ShigotoMemogaki-Regular-1-01.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ShigotoMemogaki-Regular-1-01.ttf"; path = "../../../../Downloads/shigoto2/ShigotoMemogaki-Regular-1-01.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 		9F4232CB20E2E8FE00A61164 /* simpleVC */ = {
 			isa = PBXGroup;
 			children = (
+				B3BC3F962100F8CC00375347 /* ShigotoMemogaki-Regular-1-01.ttf */,
 				9F4232CC20E2E92300A61164 /* simpleVC1.swift */,
 				9F4232CD20E2E92300A61164 /* simpleVC1.xib */,
 				9F4232D020E2E93900A61164 /* simpleVC2.swift */,
@@ -328,6 +331,7 @@
 			files = (
 				9F4230D820E15C3E00A61164 /* LaunchScreen.storyboard in Resources */,
 				9F4230D520E15C3E00A61164 /* Assets.xcassets in Resources */,
+				B3BC3F972100F8CC00375347 /* ShigotoMemogaki-Regular-1-01.ttf in Resources */,
 				9F42317E20E1740E00A61164 /* Info.plist in Resources */,
 				9F4232E220E2F7B400A61164 /* stamp2.xib in Resources */,
 				9F4232DE20E2F7A000A61164 /* stamp1.xib in Resources */,

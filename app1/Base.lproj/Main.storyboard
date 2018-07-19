@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x2W-ZZ-7dF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1154,7 +1154,6 @@
                                     <outlet property="nameLabel" destination="9FS-Ru-OmE" id="Wnx-vP-Gkd"/>
                                     <outlet property="thumnailImageView" destination="Nqa-Xp-dae" id="Nmt-8C-ILj"/>
                                     <outlet property="typeLabel" destination="9A1-EK-Z3x" id="lHX-QB-3oS"/>
-                                    <segue destination="DMw-Z4-fUz" kind="show" id="x1T-SP-zwN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1353,6 +1352,7 @@
                     </view>
                     <size key="freeformSize" width="375" height="700"/>
                     <connections>
+                        <outlet property="ID" destination="iXV-1N-NT3" id="5Ir-FH-1z8"/>
                         <outlet property="pagecontrol" destination="FKb-My-0om" id="t3a-dJ-Jad"/>
                         <outlet property="scrollview" destination="DCY-mA-07D" id="cAs-st-MHq"/>
                     </connections>
@@ -2025,11 +2025,10 @@ It is for small needs it never asks,         or knows or remembers.</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Zw8-68-RaJ"/>
-        <segue reference="x1T-SP-zwN"/>
         <segue reference="l0g-1H-y9i"/>
         <segue reference="RvM-VH-dXP"/>
         <segue reference="nJE-6N-Y0k"/>
-        <segue reference="AnS-nN-vK1"/>
+        <segue reference="UHt-SL-3Kd"/>
         <segue reference="sIF-Gh-v6x"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.1764705882" green="0.34509803919999998" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
