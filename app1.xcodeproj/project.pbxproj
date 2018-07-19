@@ -40,6 +40,7 @@
 		B36424AE20FFB53F0013BBF1 /* picController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36424AD20FFB53F0013BBF1 /* picController.swift */; };
 		B3BC3F8F21005E9E00375347 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC3F8E21005E9E00375347 /* RestaurantTableViewController.swift */; };
 		B3BC3F91210060EB00375347 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC3F90210060EB00375347 /* Restaurant.swift */; };
+		B3BC3F952100768700375347 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BC3F942100768700375347 /* RestaurantTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		B36424AD20FFB53F0013BBF1 /* picController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = picController.swift; sourceTree = "<group>"; };
 		B3BC3F8E21005E9E00375347 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
 		B3BC3F90210060EB00375347 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		B3BC3F942100768700375347 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				9F4230CF20E15C3D00A61164 /* SecondViewController.swift */,
 				9F4230D120E15C3D00A61164 /* Main.storyboard */,
 				B3BC3F8E21005E9E00375347 /* RestaurantTableViewController.swift */,
+				B3BC3F942100768700375347 /* RestaurantTableViewCell.swift */,
 				B3BC3F90210060EB00375347 /* Restaurant.swift */,
 				B36424A520FE7CE40013BBF1 /* pageController.swift */,
 				B36424A720FEEC660013BBF1 /* pageController1.swift */,
@@ -370,6 +373,7 @@
 				9F4232DD20E2F7A000A61164 /* stamp1.swift in Sources */,
 				9F4230CC20E15C3D00A61164 /* AppDelegate.swift in Sources */,
 				9F42318220E21CD200A61164 /* textViewController.swift in Sources */,
+				B3BC3F952100768700375347 /* RestaurantTableViewCell.swift in Sources */,
 				9F4232E420E2F80500A61164 /* stampViewController.swift in Sources */,
 				B36424AA20FEF4F50013BBF1 /* pageController2.swift in Sources */,
 				9F42317A20E1740E00A61164 /* ViewController.swift in Sources */,

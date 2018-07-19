@@ -11,9 +11,9 @@ import UIKit
 class RestaurantTableViewController: UITableViewController {
     
     var restaurants:[Restaurant] = [
-        Restaurant(name: "Your postcard has been sent", type: "餐廳", location: "840高雄市大樹區學城路1段153號義大皇家酒店LB大廳樓層", phone: "07-6568166#21205", image: "postcard1.jpg", isVisited: false),
-        Restaurant(name: "Your postcard has been sent", type: "港式飲茶餐廳", location: "840高雄市大樹區學城路1段153號義大皇家酒店LB大廳樓層", phone: "07-6568166#21402", image: "postcard2.jpg", isVisited: false),
-        Restaurant(name: "Teddy Attack accept you friend...", type: "餐廳", location: "827高雄市燕巢區義大路1號", phone: "07-6150011", image: "莊1.png", isVisited: false),
+        Restaurant(name: "Your postcard has been sent.", type: "mon", location: "840高雄市大樹區學城路1段153號義大皇家酒店LB大廳樓層", phone: "view the post card", image: "postcard1.jpg", isVisited: false),
+        Restaurant(name: "Your postcard has been sent.", type: "2018.5.30", location: "840高雄市大樹區學城路1段153號義大皇家酒店LB大廳樓層", phone: "view the post card", image: "postcard2.jpg", isVisited: false),
+        Restaurant(name: "Teddy Attack accept you friend request.", type: "2018.5.14", location: "827高雄市燕巢區義大路1號", phone: "view this friend's ID", image: "莊1.png", isVisited: false),
         ]
     
     // MARK: - View life cycle
@@ -37,12 +37,37 @@ class RestaurantTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)as! RestaurantTableViewCell
         
         // Configure the cell...
-        cell.textLabel?.text = restaurants[indexPath.row].name
-        cell.imageView?.image = UIImage(named: restaurants[indexPath.row].image)
-        
+        //cell.textLabel?.text = restaurants[indexPath.row].name
+        //cell.imageView?.image = UIImage(named: restaurants[indexPath.row].image)
+        cell.nameLabel.text = restaurants[indexPath.row].name
+        cell.typeLabel.text = restaurants[indexPath.row].type
+        cell.thumnailImageView.image = UIImage(named: restaurants[indexPath.row].image)
         return cell
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let optionMenu = UIAlertController(title: nil, message: "請選擇", preferredStyle: .actionSheet)
+        // 加上打電話動作
+        // TODO: Call Phone handler
+        let callAction = UIAlertAction(title: " \(restaurants[indexPath.row].phone)", style: .default, handler: nil)
+        optionMenu.addAction(callAction)
+        // 加上"取消"動作
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        optionMenu.addAction(cancelAction)
+        present(optionMenu,animated: true,completion: nil)
+    }
+    
+    // Swipe-to-delete
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            restaurants.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
     }
 }
